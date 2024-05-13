@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block page_styles %}
+    body {
+        background-image: url('img/logo.png');
+    }
+{% endblock %}
+
+{% block content %}
+    
+    <h1>Projetos relacionados a programação:</h1>
+    <h6>No momento, estou envolvido em 2 projetos, sendo eles:</h6>
+    
+    <ol>
+        <li>Um projeto academico</li>
+        <li>Projeto pessoal</li>
+    </ol>
+
+    <hr>
+    <h4>Projeto acadêmico:</h4>
+    
+    <p>Estou participando de um projeto semestral da FATEC, um API. API é a sigla em inglês para Application Programming Interface, ouinterface de programação de aplicações. As interfaces de programação de aplicativos (APIs) são conjuntos de ferramentas, definições e protocolos para a criação de aplicações de software.</p>
+    <p>Para este semestre, foi criada uma aplicação web para a coleta e exibição de dados referentes a uma estufa automatizada para agricultura indoor.</p>
+    <p>Link do GitHub do projeto: <a href="https://github.com/joaosuzuki98/1_sem_api_fatec">GitHub</a> </p>
+    <h6> Até o momento, pude realizar as seguintes tasks:</h6>
+    <ol>
+        <li>Desenvolver um botão para entrar na página de Delete.</li>
+        <li>Criar o Overview para ter o resumo diário dos dados</li>
+        <li>Criar o símbolo do dia</li>
+    </ol>
+    <h6>Tecnologias utilizadas:</h6>
+    <ol>
+        <li>Python 3 (Flask)</li>
+        <li>HTML5 e CSS3</li>
+    </ol>
+
+    <hr>
+
+    <h4>Projeto pessoal:</h4>
+    <p>Eu e mais 2 amigos estamos desenvolvendo um jogo estilo pixel art, de terror e com perspectiva top down (visão de cima). Em resumo, o enredo é baseado na perspectiva de um criminoso sendo levado a forca, na era medieval. O jogador terá que cometer os crimes do protagonista, revividos por ele durante a ida à execução. O jogo terá elementos inspirados na música "Hallowed Be Thy Name", da banda Iron Maiden.</p>
+    <p>O projeto ainda esta nas fases iniciais, com a criação da arte e do roteiro. Iremos dar procedimento ao projeto com o avanço de nossos estudos.</p>
+    <p>Segue uma arte da qual o jogo se baseará:</p>
+    <img src="static/img/game.jpeg" alt="Jogo">
+
+    <hr>
+
+    {% endblock %}

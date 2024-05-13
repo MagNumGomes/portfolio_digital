@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<div>    
+    <h2>Página pessoal de João Vítor Góes</h2>
+<hr>
+<div class="content-container">
+    <img src="{{ url_for('static', filename='img/ft.jpg') }}" alt="Foto">
+</div>
+    <p> </p>
+<div class="education">
+    <h2>Informações Educacionais</h2>
+    <p>Estudante do 1° semestre de Desenvolvimento de Software Multiplataforma na FATEC de São José dos Campos</p>
+    <p>Um grande fã de metal, games e hqs</p>
+</div>
+<hr>
+<div class="social-links">
+    <h2>Links Sociais</h2>
+    <a href="https://www.instagram.com/goesjv">Instagram</a>
+    <a href="https://github.com/MagNumGomes">GitHub</a>
+    <a href="https://www.linkedin.com/in/joãovítorgóes01">LinkedIn</a>
+</div>
+
+</div>
+{% endblock %}
