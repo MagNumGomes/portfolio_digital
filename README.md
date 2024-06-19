@@ -22,7 +22,7 @@
 	<li>JavaScript</li>
 </ol>
 
-<h1>Instalação do Python e Flask para a execução do projeto</h1>
+<h1>Instalação do Python e Flask para a execução do portfólio</h1>
 
 <h2>1. Instalando o Python</h2>
 <p>Primeiro, você precisa instalar o Python em seu computador. Você pode baixar o instalador do Python no <a href="https://www.python.org/downloads/">site oficial do Python</a>. Siga as instruções de instalação fornecidas no site.</p>
