@@ -1,28 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body, html {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: white; 
-    color: black; 
+    background-color: #213843 !important;
+    color: #eeeceb; 
+    font-family: "Ubuntu", sans-serif !important;
+    text-align: center;
 }
 
 main {
     flex: 1;
 }
 
-.content-container {
-    display: flex;
-    align-items: center;
+p, h1, h2, h3, h4, h5, h6 {
+    text-align: center !important;
+    color: #eeeceb !important;
 }
 
-.text-container {
-    flex: 1; 
-    padding-left: 20px; 
+p {
+    margin-bottom: 2px;
 }
+
+/*
+hr {
+  border-width: 5px;
+}
+*/
 
 .navbar {
     height: 40px;
+    background-color: #49c353 !important;
 }
 
 .navbar-brand-centered {
@@ -35,12 +45,14 @@ main {
     width: 100px; 
     height: auto; 
     cursor: pointer; 
+    min-height: 60px;
+    width: 50%;
 }
 
 .nav-link {
     color: black;
     font-size: 30px;
-    font-family: monospace;    
+    font-family: "Ubuntu", sans-serif !important;   
 }
 
 .navbar-nav {
@@ -51,37 +63,85 @@ main {
 
 .navbar-nav li {
     margin: 0 10px;
+
 }
 
 .bg-danger {
-    background-color: red !important;
+    background-color: #49c353 !important;
 }
 
-.bg-danger-footer {
-    background-color: red !important;
+.hamburger {
+    position: absolute;
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%); /* ->Compensa o posicionamento vertical */
+    margin-left: 20px;
+    background-color: #d0fdd7;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #9bfab0;
+    padding: 20px;
+
+  }
+
+.hamburger.clicked {
+    background-color: #e5f9e0;
+    color: black;
 }
 
--------------------------------------
+.navbar-collapse.show .nav-link {
+    background-color: #e5f9e0;
+    transition: background-color 0.3s;
+    text-align: center;
+    border-radius: 100px;
+    padding: 20px;
+    border: 2px solid;
+    border-color: #9bfab0;
+    margin: 5px
+}
+
+@media (min-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* LOGO SVG */
+.svg-logo {
+    width: 500px; 
+    height: 500px; 
+    transition: all 0.3s ease;  
+}
+
+.svg-logo:hover {
+    transform: scale(1.1);
+}
+
 
 .content-container {
     max-width: 800px; 
     margin: 0 auto; 
     padding: 0 20px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.text-container {
+    flex: 1; 
+    padding-left: 20px; 
 }
 
 img {
     max-width: 50%; 
     height: auto; 
     display: block; 
-    margin: 0 auto; 
-}
-
-h2, p {
-    text-align: center;
-}
-
-p {
-    margin-bottom: 0px;
+    margin: 20px auto; 
+    border-radius: 30px;
 }
 
 .social-links {
@@ -93,28 +153,41 @@ p {
     margin-bottom: 20px;
 }
 
-.navbar-brand img {
-        width: 100px; 
-        height: auto; 
-        cursor: pointer; 
-    }
-
--------------------------------------
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
+/* .about-games, .storytelling-interes sections */
 .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+  }
+  
+  .about-games, .storytelling-interest {
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 45%;
+  }
+
+/* Navbar problematica MORRA */
+.navbar-toggler {
+    margin-left: 20px;
 }
 
-.about-comics,
-.storytelling-interest {
-    flex: 1;
-    padding: 20px;
+@media (min-width: 50%) {
+    .navbar-toggler {
+        background-color: #d0fdd7;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 0.5s;
+        cursor: pointer;
+        border: 10px solid;
+        border-color: #9bfab0;
+        text-align: center;
+    }
 }

@@ -7,9 +7,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/hobbies')
+@app.route('/sobremim')
 def contato():
-    return render_template('hobbies.html')
+    return render_template('sobremim.html')
 
 
 @app.route('/projetos')
